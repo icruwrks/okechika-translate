@@ -15,6 +15,7 @@
 python .\translate_html_v2.py .\あげぎぺやほせ.html
 python .\translate_html_v2.py '.\倏俊丣亞乱丌代 _ あげぎぺやほせ.html'
 python .\translate_html_v2.py '.\什儺伏丂佄代伸 _ あげぎぺやほせ.html'
+python .\translate_html_v2.py '.\倄乼 _ あげぎぺやほせ.html'
 ```
 
 ## 翻訳の参考リンク
