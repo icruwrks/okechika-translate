@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okechika Translate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            margin-top: 50px;
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .content {
+            margin-top: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .section p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        
+        .translation-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .original {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .translated {
+            font-style: italic;
+            color: #555;
+        }
+        
+        .label {
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #777;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Okechika Translate</h1>
+        
+        <div class="content">
+            <div class="section">
+                <h2>プロジェクトについて</h2>
+                <p>Okechika Translateは、翻訳プロジェクトのためのプラットフォームです。このページでは、翻訳された作品や関連情報を公開しています。</p>
+            </div>
+            
+            <div class="section">
+                <h2>About This Project</h2>
+                <p>Okechika Translate is a platform for translation projects. This page publishes translated works and related information.</p>
+            </div>
+            
+            <div class="section">
+                <h2>翻訳サンプル / Translation Sample</h2>
+                <div class="translation-box">
+                    <div class="original">
+                        <span class="label">Original (日本語):</span>
+                        <p>こんにちは、世界。これは翻訳プロジェクトのサンプルページです。</p>
+                    </div>
+                    <div class="translated">
+                        <span class="label">Translation (English):</span>
+                        <p>Hello, world. This is a sample page for the translation project.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>リンク / Links</h2>
+                <p><a href="https://github.com/icruwrks/okechika-translate" target="_blank">GitHub Repository</a></p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 Okechika Translate Project</p>
+        </footer>
+    </div>
+</body>
+</html>
