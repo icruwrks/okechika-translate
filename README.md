@@ -31,4 +31,4 @@ python translate_html_v2.py 'original\倄乼 _ あげぎぺやほせ.html'
 ## 翻訳の参考リンク
 
 - https://unknownglyphviewer.pages.dev/
-
+- https://github.com/Parallax-kk/OkechikaTranslater/releases
