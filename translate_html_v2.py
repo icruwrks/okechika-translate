@@ -164,7 +164,18 @@ def translate_html_file(input_path, csv_path):
     # 出力ファイル名を生成
     input_path_obj = Path(input_path)
     output_filename = f"{input_path_obj.stem}_translate{input_path_obj.suffix}"
-    output_path = input_path_obj.parent / output_filename
+    
+    # 新しいフォルダ構造に対応: translated/フォルダに保存
+    script_dir = Path(__file__).parent
+    output_dir = script_dir / 'translated'
+    output_dir.mkdir(exist_ok=True)
+    output_path = output_dir / output_filename
+    
+    # _filesフォルダへの参照を更新 (xxx_files/ -> ../files/xxx_files/)
+    basename = input_path_obj.stem
+    files_folder_old = f"{basename}_files/"
+    files_folder_new = f"../files/{basename}_files/"
+    translated_content = translated_content.replace(files_folder_old, files_folder_new)
     
     # 変換後のファイルを保存
     try:
@@ -189,7 +200,7 @@ def main():
     # コマンドライン引数のチェック
     if len(sys.argv) < 2:
         print("使用方法: python translate_html_v2.py <入力HTMLファイル> [対応表CSVファイル]")
-        print("例: python translate_html_v2.py あげぎぺやほせ.html taiouhyou.csv")
+        print("例: python translate_html_v2.py original/あげぎぺやほせ.html taiouhyou.csv")
         sys.exit(1)
     
     input_html = sys.argv[1]
